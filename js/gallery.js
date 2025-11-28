@@ -66,7 +66,6 @@ const images = [
 
 const galleryList = document.querySelector('.gallery');
 
-// Створюємо розмітку
 const markup = images
   .map(
     ({ preview, original, description }) => `
@@ -85,7 +84,6 @@ const markup = images
 
 galleryList.innerHTML = markup;
 
-// Делегування
 galleryList.addEventListener('click', onGalleryClick);
 
 function onGalleryClick(event) {
